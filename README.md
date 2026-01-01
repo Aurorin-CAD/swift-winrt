@@ -1,3 +1,12 @@
+# Aurorin
+
+build following original instructions 
+
+the to gen winui stuff:
+
+ .\out\debug\bin\swiftwinrt.exe "@WinUI.rsp"  
+
+
 # Swift/WinRT
 Swift Language Projection for WinRT
 

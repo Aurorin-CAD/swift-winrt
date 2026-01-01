@@ -1,0 +1,9 @@
+-ns-prefix
+-include Windows.UI.Xaml
+-include Windows.UI.Xaml.Controls
+-include Windows.UI.Xaml.Media
+-include Windows.Foundation
+-include Windows.Foundation.Collections
+-output WinUIBindings
+-reference 10.0.26100.0
+-log
