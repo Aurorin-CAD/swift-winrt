@@ -6,6 +6,39 @@ the to gen winui stuff:
 
  .\out\debug\bin\swiftwinrt.exe "@WinUI.rsp"  
 
+## NuGet Package Installation
+
+NuGet packages were installed using the following command:
+
+```
+nuget.exe install Microsoft.WindowsAppSDK -OutputDirectory aurorin_nuget_install
+```
+
+The following packages and versions are currently installed in the `aurorin_nuget_install` folder:
+
+| Package | Version |
+|---------|---------|
+| Microsoft.Web.WebView2 | 1.0.3179.45 |
+| Microsoft.Web.WebView2 | 1.0.3650.58 |
+| Microsoft.Windows.SDK.BuildTools | 10.0.26100.4654 |
+| Microsoft.Windows.SDK.BuildTools.MSIX | 1.7.20250829.1 |
+| Microsoft.Windows.SDK.Contracts | 10.0.26100.7175 |
+| Microsoft.WindowsAppSDK | 1.8.251106002 |
+| Microsoft.WindowsAppSDK.AI | 1.8.39 |
+| Microsoft.WindowsAppSDK.Base | 1.8.250831001 |
+| Microsoft.WindowsAppSDK.DWrite | 1.8.25090401 |
+| Microsoft.WindowsAppSDK.Foundation | 1.8.251104000 |
+| Microsoft.WindowsAppSDK.InteractiveExperiences | 1.8.251104001 |
+| Microsoft.WindowsAppSDK.ML | 1.8.2109 |
+| Microsoft.WindowsAppSDK.Runtime | 1.8.251106002 |
+| Microsoft.WindowsAppSDK.Widgets | 1.8.250904007 |
+| Microsoft.WindowsAppSDK.WinUI | 1.8.251105000 |
+| System.Runtime.InteropServices.WindowsRuntime | 4.3.0 |
+| System.Runtime.WindowsRuntime | 4.6.0 |
+| System.Runtime.WindowsRuntime.UI.Xaml | 4.6.0 |
+
+
+-------
 
 # Swift/WinRT
 Swift Language Projection for WinRT
