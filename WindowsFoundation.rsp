@@ -1,0 +1,10 @@
+-ns-prefix
+-include Windows.Foundation.Collections
+-include Windows.Foundation.Numerics
+-include Windows.Foundation
+-exclude Windows.Foundation.PropertyValue
+-exclude Windows.Foundation.GuidHelper
+-output WindowsFoundationBindings
+-reference 10.0.26100.0
+-log
+

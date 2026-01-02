@@ -2,9 +2,36 @@
 
 build following original instructions 
 
-the to gen winui stuff:
+## Generating Swift/WinRT Bindings
 
- .\out\debug\bin\swiftwinrt.exe "@WinUI.rsp"  
+To generate all bindings from the split .rsp files, run:
+
+```powershell
+.\generate-all.bat
+```
+
+Or if you prefer PowerShell (may require execution policy changes):
+
+```powershell
+.\generate-all.ps1
+```
+
+This will generate bindings in the following output directories:
+- `WinUIBindings` - From WinUI.rsp (Windows.UI.Xaml, Windows.Foundation)
+- `WindowsAppSDKBindings` - From WindowsAppSDK.rsp (Microsoft.UI.*, Microsoft.Windows.*)
+- `CWinRTBindings` - From cwinrt.rsp (Microsoft.Graphics.Canvas, Microsoft.UI.*, Windows.*)
+- `UWPBindings` - From uwp.rsp (UWP-specific Windows types)
+- `WindowsFoundationBindings` - From WindowsFoundation.rsp (Windows.Foundation.*)
+
+To generate bindings from a specific .rsp file individually:
+
+```powershell
+.\out\debug\bin\swiftwinrt.exe "@WinUI.rsp"
+.\out\debug\bin\swiftwinrt.exe "@WindowsAppSDK.rsp"
+.\out\debug\bin\swiftwinrt.exe "@cwinrt.rsp"
+.\out\debug\bin\swiftwinrt.exe "@uwp.rsp"
+.\out\debug\bin\swiftwinrt.exe "@WindowsFoundation.rsp"
+```
 
 ## NuGet Package Installation
 
@@ -12,6 +39,7 @@ NuGet packages were installed using the following command:
 
 ```
 nuget.exe install Microsoft.WindowsAppSDK -OutputDirectory aurorin_nuget_install
+nuget install Microsoft.Graphics.Win2D -OutputDirectory aurorin_nuget_install
 ```
 
 The following packages and versions are currently installed in the `aurorin_nuget_install` folder:
