@@ -18,9 +18,8 @@ Or if you prefer PowerShell (may require execution policy changes):
 
 This will generate bindings in the following output directories:
 - `WinUIBindings` - From WinUI.rsp (Windows.UI.Xaml, Windows.Foundation)
-- `WindowsAppSDKBindings` - From WindowsAppSDK.rsp (Microsoft.UI.*, Microsoft.Windows.*)
+- `WindowsAppSDKBindings` - From WindowsAppSDK.rsp (Microsoft.UI.*, Microsoft.Windows.*, UWP-specific Windows types)
 - `CWinRTBindings` - From cwinrt.rsp (Microsoft.Graphics.Canvas, Microsoft.UI.*, Windows.*)
-- `UWPBindings` - From uwp.rsp (UWP-specific Windows types)
 - `WindowsFoundationBindings` - From WindowsFoundation.rsp (Windows.Foundation.*)
 
 To generate bindings from a specific .rsp file individually:
@@ -29,7 +28,6 @@ To generate bindings from a specific .rsp file individually:
 .\out\debug\bin\swiftwinrt.exe "@WinUI.rsp"
 .\out\debug\bin\swiftwinrt.exe "@WindowsAppSDK.rsp"
 .\out\debug\bin\swiftwinrt.exe "@cwinrt.rsp"
-.\out\debug\bin\swiftwinrt.exe "@uwp.rsp"
 .\out\debug\bin\swiftwinrt.exe "@WindowsFoundation.rsp"
 ```
 
